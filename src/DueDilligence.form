@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jLabel10" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel9" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel4" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" pref="230" max="32767" attributes="0"/>
+                          <Component id="jLabel3" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel11" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel12" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel13" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel14" alignment="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="361" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="154" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="40" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="16" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="New Client Enhanced Due Diligence - Organisation Identity Checklist"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;- Through a full company search? or&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Has the identity of the organisation been established? Eg: &lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;- By certified copies taken from original documents evidencing details of incorporation or registration, registered office and a list of directors and shareholders or equivalent.&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Yes, No / N/A"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Comments"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Initials / Date"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Has evidence of the organisation&#x2019;s activity been established and agreed as bona fide?&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Do we fully understand the ownership structure of the organisation?&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select individual(s) (eg. directors) and / or entities who exercise significant influence over the organisation and verify their identity using the relevant identity form.&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Has evidence of the identities of all beneficial owners been obtained?&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;If there are no beneficial owners, have we obtained confirmation of the identity of those individuals who exercise influence and / or have the largest ownership interest in the organisation?&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Have copies of the relevant supporting documents been taken and filed?&lt;/html&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JFrame frame = new JFrame();&#xa;frame.setLayout(new GridLayout());&#xa;JLabel label = new JLabel(&quot;&lt;html&gt;First line&lt;br&gt;Second line&lt;/html&gt;&quot;);&#xa;frame.add(label);&#xa;frame.pack();&#xa;frame.setVisible(true);"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

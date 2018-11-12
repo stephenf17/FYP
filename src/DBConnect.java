@@ -8,6 +8,9 @@ public class DBConnect {
     private Statement st;
     private ResultSet rs;
     
+    //YouTube tutorial - https://www.youtube.com/watch?v=BCqW5XwtJxY&t=74s
+    //Raeding data from database
+    
     public DBConnect(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
