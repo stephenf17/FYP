@@ -86,6 +86,7 @@ public class ClientFrame extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 2, 13)); // NOI18N
         jLabel4.setText("Prepared By:");
 
+        TF_PreparedBy.setEditable(false);
         TF_PreparedBy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_PreparedByActionPerformed(evt);

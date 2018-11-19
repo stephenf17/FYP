@@ -6,14 +6,13 @@
 
 
 import java.sql.*;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 /**
  *
  * @author Admin
  */
 public class login extends javax.swing.JFrame {
-    
-    
+
     
     //YouTube Video - https://www.youtube.com/watch?v=qTAFbFZzEKw&t=9s
     //Create a login system using data from database
@@ -27,7 +26,7 @@ public class login extends javax.swing.JFrame {
             Class.forName("com.mysql.cj.jdbc.Driver");
             cn=DriverManager.getConnection("jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "");
             st=cn.createStatement();
-            JOptionPane.showMessageDialog(null, "Succesful Connection");
+            //JOptionPane.showMessageDialog(null, "Succesful Connection");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Connection Failed");
         }
@@ -45,9 +44,9 @@ public class login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        user1 = new javax.swing.JTextField();
         btnLogin = new javax.swing.JButton();
         pass1 = new javax.swing.JPasswordField();
+        user1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,62 +71,61 @@ public class login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(245, 245, 245)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(89, 89, 89)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(user1)
-                            .addComponent(pass1, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE))))
-                .addContainerGap(199, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnLogin)
-                .addGap(214, 214, 214))
+                            .addComponent(jLabel1)
+                            .addComponent(pass1, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                            .addComponent(user1)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(btnLogin)))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addGap(56, 56, 56)
+                .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(user1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(pass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                .addGap(38, 38, 38)
                 .addComponent(btnLogin)
-                .addContainerGap(220, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        
-            ClientFrame cf = new ClientFrame();
-            ClientFrame.TF_PreparedBy.setText(this.user1.getText());
-            cf.setVisible(true);
+
         
         try {
+            LandingScreen ls = new LandingScreen();
+            LandingScreen.TF_User.setText(this.user1.getText());
             String sql = "select *from users where Username = '"+user1.getText()+"'and Password = '"+String.valueOf(pass1.getPassword())+"'";
             ResultSet rss = st.executeQuery(sql);
             if (rss.next()) {
-                ClientFrame = new ClientFrame();
-                ClientFrame.setVisible(true);
+                ls.setVisible(true);
                 this.dispose();
             } else {
-                JOptionPane.showMessageDialog(null, "Successful Login");
+                JOptionPane.showMessageDialog(null, "Incorrect username and/or password","Access Denied", JOptionPane.ERROR_MESSAGE);
+                login login = new login();
+                login.setVisible(true);
+                ls.setVisible(false);
             }
         } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "Failed Login");
+                JOptionPane.showMessageDialog(null, e);
+                
         }
     }//GEN-LAST:event_btnLoginActionPerformed
 
@@ -172,6 +170,6 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField pass1;
-    public static javax.swing.JTextField user1;
+    private javax.swing.JTextField user1;
     // End of variables declaration//GEN-END:variables
 }
