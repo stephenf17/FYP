@@ -6,9 +6,9 @@ import java.sql.*;
 import java.awt.event.*;
 
 public class Work extends JFrame implements ActionListener{
-    JLabel JL_Name,JL_Sector,JL_Telephone,JL_Email,JL_Address,JL_Website,JL_Vat;
-    JTextField JT_Name,JT_Sector,JT_Telephone,JT_Email,JT_Address,JT_Website,JT_Vat;
-    JButton btn_search;
+    JLabel JL_Name,JL_Sector,JL_Telephone,JL_Email,JL_Address,JL_Website,JL_Vat,JL_Compliance;
+    JTextField JT_Name,JT_Sector,JT_Telephone,JT_Email,JT_Address,JT_Website,JT_Vat,JT_Compliance;
+    JButton btn_search, btn_back;
 
       public Work(){
           super("Search");
@@ -19,6 +19,9 @@ public class Work extends JFrame implements ActionListener{
           btn_search = new JButton("Search");
           btn_search.setBounds(320, 20, 80, 27);
           btn_search.addActionListener(this);
+          btn_back = new JButton("Back");
+          btn_back.setBounds(180, 280, 80, 27);
+          btn_back.addActionListener(this);
           setVisible(true);
           setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           setLocationRelativeTo(null);
@@ -54,8 +57,15 @@ public class Work extends JFrame implements ActionListener{
           JT_Vat = new JTextField(20);
           JT_Vat.setBounds(160, 200, 150, 27);
           JT_Vat.setEditable(false);
+          JL_Compliance = new JLabel ("Compliance:");
+          JL_Compliance.setBounds(20, 230, 100, 20);
+          JT_Compliance = new JTextField(20);
+          JT_Compliance.setBounds(160, 230, 150, 27);
+          JT_Compliance.setEditable(false);
           setLayout(null);
+
           add(btn_search);
+          add(btn_back);
           add(JL_Name);
           add(JL_Sector);
           add(JT_Telephone);
@@ -63,6 +73,7 @@ public class Work extends JFrame implements ActionListener{
           add(JL_Address);
           add(JL_Website);
           add(JL_Vat);
+          add(JL_Compliance);
           add(JT_Name);
           add(JT_Sector);
           add(JL_Telephone);
@@ -70,8 +81,10 @@ public class Work extends JFrame implements ActionListener{
           add(JT_Address);
           add(JT_Website);
           add(JT_Vat);
-    }
+          add(JT_Compliance);
 
+    }
+          
     @Override
     public void actionPerformed(ActionEvent e) { 
     Function f = new Function();
@@ -82,6 +95,7 @@ public class Work extends JFrame implements ActionListener{
     String address = "address";
     String website = "website";
     String vat = "vat";
+    JT_Compliance.setText("Achieved");
     
     rs = f.find(JT_Name.getText());
     try{
@@ -105,6 +119,7 @@ public class Work extends JFrame implements ActionListener{
     }catch(Exception ex){
            JOptionPane.showMessageDialog(null, ex.getMessage());
             }
+
     }
 
 

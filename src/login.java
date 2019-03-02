@@ -111,6 +111,7 @@ public class login extends javax.swing.JFrame {
         
         try {
             LandingScreen ls = new LandingScreen();
+            this.dispose();
             LandingScreen.TF_User.setText(this.user1.getText());
             String sql = "select *from users where Username = '"+user1.getText()+"'and Password = '"+String.valueOf(pass1.getPassword())+"'";
             ResultSet rss = st.executeQuery(sql);
